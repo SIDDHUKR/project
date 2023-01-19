@@ -1,0 +1,48 @@
+<!-- <p>login works!</p> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>login</h1>
+                    <h6>plese enter email and password</h6>
+                </div>
+                    <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    <a routerLink="/mainpage">
+                        <button type="submit" class="btn btn-primary mb-2">login</button> </a>
+                      </form><br>
+                      <a style="color: #fff;margin-top:10px"  routerLink="/signup">New user Sign up hare</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%); */
+    background-color: rgb(45, 204, 64);
+    color: aliceblue;
+}
+.card h1,h6{
+    color: #ffffff;
+}
+lable{
+    color: #ffffff;
+}
+</style>
